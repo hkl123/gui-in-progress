@@ -2,10 +2,10 @@
 #define TESTCLASS_H
 
 
-class testClass
+class Testclass
 {
 public:
-    testClass();
+    Testclass();
 };
 
 #endif // TESTCLASS_H

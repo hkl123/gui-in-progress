@@ -1,6 +1,6 @@
 #include "testclass.h"
 
-testClass::testClass()
+Testclass::Testclass()
 {
 
 }
