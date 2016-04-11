@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2016-04-11T13:28:18
+# Project created by QtCreator 2016-04-11T13:54:59
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = window
+TARGET = GUI
 TEMPLATE = app
 
 
