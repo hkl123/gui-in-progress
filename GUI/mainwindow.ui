@@ -76,7 +76,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="QStackedWidget" name="view">
     <property name="geometry">
      <rect>
       <x>39</x>
@@ -85,6 +85,7 @@
       <height>381</height>
      </rect>
     </property>
+    <widget class="QWidget" name="viewPage1" native="true"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
