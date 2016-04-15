@@ -12,9 +12,9 @@ TARGET = GUI
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
+SOURCES +=\
         mainwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  +=
 
 FORMS    += mainwindow.ui
