@@ -410,9 +410,6 @@ debug/mainwindow.o: GUI/mainwindow.cpp GUI/mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qstyle.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtabbar.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qrubberband.h \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QMenuBar \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qmenubar.h \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qmenu.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QPlainTextEdit \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qplaintextedit.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtextedit.h \
@@ -429,8 +426,6 @@ debug/mainwindow.o: GUI/mainwindow.cpp GUI/mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QPushButton \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qpushbutton.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qabstractbutton.h \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QStackedWidget \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qstackedwidget.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QStatusBar \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qstatusbar.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QToolBar \
@@ -732,6 +727,8 @@ debug/mainwindow.o: GUI/mainwindow.cpp GUI/mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qlcdnumber.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qmdiarea.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qmdisubwindow.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qmenu.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qmenubar.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qprogressbar.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qradiobutton.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qscrollbar.h \
@@ -739,6 +736,7 @@ debug/mainwindow.o: GUI/mainwindow.cpp GUI/mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qspinbox.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qsplashscreen.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qsplitter.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qstackedwidget.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtextbrowser.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtoolbox.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtoolbutton.h \

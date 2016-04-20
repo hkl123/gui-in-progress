@@ -15,7 +15,6 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStackedWidget>
@@ -36,7 +35,6 @@ public:
     QPlainTextEdit *plainTextEdit;
     QStackedWidget *view;
     QWidget *viewPage1;
-    QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -49,13 +47,13 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(120, 450, 121, 41));
+        pushButton->setGeometry(QRect(380, 450, 121, 41));
         pushButton_2 = new QPushButton(centralWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(250, 450, 121, 41));
+        pushButton_2->setGeometry(QRect(120, 450, 121, 41));
         pushButton_3 = new QPushButton(centralWidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(380, 450, 121, 41));
+        pushButton_3->setGeometry(QRect(250, 450, 121, 41));
         pushButton_4 = new QPushButton(centralWidget);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
         pushButton_4->setGeometry(QRect(510, 450, 121, 41));
@@ -64,15 +62,11 @@ public:
         plainTextEdit->setGeometry(QRect(380, 40, 351, 381));
         view = new QStackedWidget(centralWidget);
         view->setObjectName(QStringLiteral("view"));
-        view->setGeometry(QRect(39, 40, 331, 381));
+        view->setGeometry(QRect(40, 40, 321, 381));
         viewPage1 = new QWidget();
         viewPage1->setObjectName(QStringLiteral("viewPage1"));
         view->addWidget(viewPage1);
         MainWindow->setCentralWidget(centralWidget);
-        menuBar = new QMenuBar(MainWindow);
-        menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 770, 21));
-        MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
