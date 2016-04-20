@@ -75,6 +75,11 @@
       <height>381</height>
      </rect>
     </property>
+    <property name="plainText">
+     <string>Text Will Appear Here:
+
+</string>
+    </property>
    </widget>
    <widget class="QStackedWidget" name="view">
     <property name="geometry">
@@ -85,20 +90,11 @@
       <height>381</height>
      </rect>
     </property>
-<<<<<<< HEAD
-    <widget class="QWidget" name="viewPage1" native="true"/>
-=======
-    <widget class="QGraphicsView" name="graphicsView">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>60</y>
-       <width>256</width>
-       <height>192</height>
-      </rect>
-     </property>
-    </widget>
->>>>>>> origin/master
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="viewPage1"/>
+    <widget class="QGraphicsView" name="graphicsView"/>
    </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
