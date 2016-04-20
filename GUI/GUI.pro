@@ -6,7 +6,7 @@
 
 QT       += core gui
 QT       += multimediawidgets
-
+QT       += multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = GUI
@@ -15,9 +15,11 @@ TEMPLATE = app
 
 SOURCES +=\
         mainwindow.cpp \
-    main.cpp
+    main.cpp \
+    camera.cpp
 
 HEADERS  += \
-    mainwindow.h
+    mainwindow.h \
+    camera.h
 
 FORMS    += mainwindow.ui
