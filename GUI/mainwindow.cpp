@@ -33,7 +33,10 @@ while (true)
 }
 QPixmap MainWindow::getImage()
 {
-  QPixmap image("C:/Users/justx_000/Pictures/test.jpg");
+  QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"),
+                                                    "/Pictures",
+                                                    tr("Images (*.png *.xpm *.jpg)"));
+  QPixmap image(fileName);
   return image;
 }
 
