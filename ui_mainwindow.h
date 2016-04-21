@@ -14,10 +14,10 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
@@ -33,8 +33,7 @@ public:
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QPlainTextEdit *plainTextEdit;
-    QStackedWidget *view;
-    QWidget *viewPage1;
+    QLabel *label;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -60,12 +59,9 @@ public:
         plainTextEdit = new QPlainTextEdit(centralWidget);
         plainTextEdit->setObjectName(QStringLiteral("plainTextEdit"));
         plainTextEdit->setGeometry(QRect(380, 40, 351, 381));
-        view = new QStackedWidget(centralWidget);
-        view->setObjectName(QStringLiteral("view"));
-        view->setGeometry(QRect(40, 40, 321, 381));
-        viewPage1 = new QWidget();
-        viewPage1->setObjectName(QStringLiteral("viewPage1"));
-        view->addWidget(viewPage1);
+        label = new QLabel(centralWidget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(30, 40, 291, 381));
         MainWindow->setCentralWidget(centralWidget);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -86,6 +82,10 @@ public:
         pushButton_2->setText(QApplication::translate("MainWindow", "Take Picture", 0));
         pushButton_3->setText(QApplication::translate("MainWindow", "Load Image", 0));
         pushButton_4->setText(QApplication::translate("MainWindow", "Save .txt", 0));
+        plainTextEdit->setPlainText(QApplication::translate("MainWindow", "Text Will Appear Here:\n"
+"\n"
+"", 0));
+        label->setText(QString());
     } // retranslateUi
 
 };

@@ -81,20 +81,18 @@
 </string>
     </property>
    </widget>
-   <widget class="QStackedWidget" name="view">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>30</x>
       <y>40</y>
-      <width>321</width>
+      <width>291</width>
       <height>381</height>
      </rect>
     </property>
-    <property name="currentIndex">
-     <number>1</number>
+    <property name="text">
+     <string/>
     </property>
-    <widget class="QWidget" name="viewPage1"/>
-    <widget class="QGraphicsView" name="graphicsView"/>
    </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">

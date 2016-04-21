@@ -18,6 +18,8 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
+    QString getText();
+    QPixmap getImage();
     ~MainWindow();
 
 private slots:

@@ -49,7 +49,8 @@ OBJECTS       = debug/mainwindow.o \
 		debug/main.o \
 		debug/moc_mainwindow.o
 
-DIST          =  GUI\mainwindow.h GUI\mainwindow.cpp \
+DIST          =  GUI\mainwindow.h \
+		camera.h GUI\mainwindow.cpp \
 		GUI\main.cpp
 QMAKE_TARGET  = GUI
 DESTDIR        = debug\ #avoid trailing-slash linebreak
@@ -410,6 +411,8 @@ debug/mainwindow.o: GUI/mainwindow.cpp GUI/mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qstyle.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtabbar.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qrubberband.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QLabel \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qlabel.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QPlainTextEdit \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qplaintextedit.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtextedit.h \
@@ -723,7 +726,6 @@ debug/mainwindow.o: GUI/mainwindow.cpp GUI/mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qfontcombobox.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qgroupbox.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qkeysequenceedit.h \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qlabel.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qlcdnumber.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qmdiarea.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qmdisubwindow.h \
