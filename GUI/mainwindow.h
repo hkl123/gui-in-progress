@@ -39,6 +39,8 @@ private slots:
 
     void on_plainTextEdit_windowIconTextChanged(const QString &iconText);
 
+    void startCamera();
+
 private:
     Ui::MainWindow *ui;
 

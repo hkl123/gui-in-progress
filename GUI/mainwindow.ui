@@ -17,7 +17,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>250</x>
       <y>450</y>
       <width>121</width>
       <height>41</height>
@@ -27,11 +27,11 @@
      <string>Snap2Text</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>450</y>
+      <x>630</x>
+      <y>480</y>
       <width>121</width>
       <height>41</height>
      </rect>
@@ -40,23 +40,10 @@
      <string>Take Picture</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>450</y>
-      <width>121</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Load Image</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>380</x>
       <y>450</y>
       <width>121</width>
       <height>41</height>

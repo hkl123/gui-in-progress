@@ -7,6 +7,7 @@ using namespace std;
 #include <QMediaRecorder>
 #include <QCameraViewfinder>
 #include <QCamera>
+#include <QCameraViewfinder>
 #include <QCameraInfo>
 #include <QMediaMetaData>
 #include <QtWidgets>
@@ -21,8 +22,21 @@ MainWindow::MainWindow(QWidget *parent) :
 {
 
     ui->setupUi(this);
+    //------------------ START CAMERA -----------------
+    //ui->label->clear();
+    ui->stackedWidget->setCurrentIndex(1);
+    //ui->stackedWidget->setCurrentWidget(viewfinder);
+    cout << ui->stackedWidget->currentWidget() << endl;
+    cout << ui->stackedWidget->widget(1) << endl;
+    ui->plainTextEdit->clear();
+    //camera->setViewfinder(viewfinder);
+    ui->scrollArea->setWidget(viewfinder);
+    camera->setViewfinder(viewfinder);
+    //ui->stackedWidget->setCurrentWidget(viewfinder);
+    camera->start();
 
 }
+
 QString MainWindow::getText()
 {
  QString hello = "hello";
@@ -45,13 +59,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-//Take Picture
-void MainWindow::on_pushButton_2_clicked()
-{
 
-}
-
-//Load Images
+//Load Images ~ will be changed to take picture
 void MainWindow::on_pushButton_3_clicked()
 {
 
@@ -61,26 +70,15 @@ ui->label->setScaledContents(true);
 ui->label->setPixmap(getImage());
 //ui->label->show();
 cout << ui->stackedWidget->currentIndex() << endl;
+
 }
 
 //Snap2Text Button
 void MainWindow::on_pushButton_clicked()
 {
-//ui->label->clear();
-ui->stackedWidget->setCurrentIndex(1);
-//ui->stackedWidget->setCurrentWidget(viewfinder);
-cout << ui->stackedWidget->currentWidget() << endl;
-cout << ui->stackedWidget->widget(1) << endl;
-ui->plainTextEdit->clear();
-//camera->setViewfinder(viewfinder);
-ui->scrollArea->setWidget(viewfinder);
-camera->setViewfinder(viewfinder);
-//ui->stackedWidget->setCurrentWidget(viewfinder);
-camera->start();
 
+    ui->plainTextEdit->insertPlainText(MainWindow::getText());
 
-
-ui->plainTextEdit->insertPlainText(MainWindow::getText());
 }
 
 //Save Button
