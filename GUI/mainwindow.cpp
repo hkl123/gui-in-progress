@@ -26,15 +26,15 @@ MainWindow::MainWindow(QWidget *parent) :
 QString MainWindow::getText()
 {
  QString hello = "hello";
-while (true)
-{
+
  return hello;
-}
+
 }
 QPixmap MainWindow::getImage()
 {
+  ui->scrollArea->close();
   QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"),
-                                                    "/Pictures",
+                                                    "",
                                                     tr("Images (*.png *.xpm *.jpg)"));
   QPixmap image(fileName);
   return image;
@@ -54,15 +54,32 @@ void MainWindow::on_pushButton_2_clicked()
 //Load Images
 void MainWindow::on_pushButton_3_clicked()
 {
+
+camera->stop();
+ui->stackedWidget->setCurrentIndex(0);
 ui->label->setScaledContents(true);
-ui->label->setPixmap(MainWindow::getImage());
-ui->label->show();
+ui->label->setPixmap(getImage());
+//ui->label->show();
+cout << ui->stackedWidget->currentIndex() << endl;
 }
 
 //Snap2Text Button
 void MainWindow::on_pushButton_clicked()
 {
+//ui->label->clear();
+ui->stackedWidget->setCurrentIndex(1);
+//ui->stackedWidget->setCurrentWidget(viewfinder);
+cout << ui->stackedWidget->currentWidget() << endl;
+cout << ui->stackedWidget->widget(1) << endl;
 ui->plainTextEdit->clear();
+//camera->setViewfinder(viewfinder);
+ui->scrollArea->setWidget(viewfinder);
+camera->setViewfinder(viewfinder);
+//ui->stackedWidget->setCurrentWidget(viewfinder);
+camera->start();
+
+
+
 ui->plainTextEdit->insertPlainText(MainWindow::getText());
 }
 

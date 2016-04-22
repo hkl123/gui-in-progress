@@ -81,18 +81,58 @@
 </string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>40</y>
+      <x>60</x>
+      <y>30</y>
       <width>291</width>
-      <height>381</height>
+      <height>391</height>
      </rect>
     </property>
-    <property name="text">
-     <string/>
+    <property name="currentIndex">
+     <number>0</number>
     </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>-24</x>
+        <y>12</y>
+        <width>301</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>19</y>
+        <width>271</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>269</width>
+         <height>369</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">

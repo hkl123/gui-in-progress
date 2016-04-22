@@ -228,6 +228,10 @@ release/moc_mainwindow.cpp: C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/Q
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qmainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtabwidget.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtGui/qicon.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/QCameraViewfinder \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qcameraviewfinder.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qvideowidget.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qtmultimediawidgetdefs.h \
 		GUI/mainwindow.h
 	"C:\Program Files (x86)\QT\5.6\mingw49_32\bin\moc.exe" $(DEFINES) -D__GNUC__ -DWIN32 -I"C:/Program Files (x86)/QT/5.6/mingw49_32/mkspecs/win32-g++" -IC:/Users/justx_000/Documents/GitHub/gui-in-progress/GUI -I"C:/Program Files (x86)/QT/5.6/mingw49_32/include" -I"C:/Program Files (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets" -I"C:/Program Files (x86)/QT/5.6/mingw49_32/include/QtMultimedia" -I"C:/Program Files (x86)/QT/5.6/mingw49_32/include/QtWidgets" -I"C:/Program Files (x86)/QT/5.6/mingw49_32/include/QtGui" -I"C:/Program Files (x86)/QT/5.6/mingw49_32/include/QtANGLE" -I"C:/Program Files (x86)/QT/5.6/mingw49_32/include/QtNetwork" -I"C:/Program Files (x86)/QT/5.6/mingw49_32/include/QtCore" -I. GUI\mainwindow.h -o release\moc_mainwindow.cpp
 
@@ -387,6 +391,10 @@ release/mainwindow.o: GUI/mainwindow.cpp GUI/mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qmainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtabwidget.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtGui/qicon.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/QCameraViewfinder \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qcameraviewfinder.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qvideowidget.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qtmultimediawidgetdefs.h \
 		ui_mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtCore/QVariant \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QAction \
@@ -429,16 +437,16 @@ release/mainwindow.o: GUI/mainwindow.cpp GUI/mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QPushButton \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qpushbutton.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qabstractbutton.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QScrollArea \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qscrollarea.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QStackedWidget \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qstackedwidget.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QStatusBar \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qstatusbar.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QToolBar \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtoolbar.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QWidget \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimedia/QMediaService \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/QCameraViewfinder \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qcameraviewfinder.h \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qvideowidget.h \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qtmultimediawidgetdefs.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimedia/QCameraInfo \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimedia/qcamerainfo.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimedia/QMediaMetaData \
@@ -665,7 +673,6 @@ release/mainwindow.o: GUI/mainwindow.cpp GUI/mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtGui/QVector3D \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtGui/QMatrix4x4 \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qgraphicsview.h \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qscrollarea.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qcolumnview.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qdatawidgetmapper.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qdirmodel.h \
@@ -738,7 +745,6 @@ release/mainwindow.o: GUI/mainwindow.cpp GUI/mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qspinbox.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qsplashscreen.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qsplitter.h \
-		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qstackedwidget.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtextbrowser.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtoolbox.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtoolbutton.h \
@@ -881,6 +887,10 @@ release/main.o: GUI/main.cpp GUI/mainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qmainwindow.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/qtabwidget.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtGui/qicon.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/QCameraViewfinder \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qcameraviewfinder.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qvideowidget.h \
+		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtMultimediaWidgets/qtmultimediawidgetdefs.h \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QtWidgets \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtWidgets/QtWidgetsDepends \
 		C:/Program\ Files\ (x86)/QT/5.6/mingw49_32/include/QtCore/QtCore \

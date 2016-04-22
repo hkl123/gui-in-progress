@@ -18,6 +18,8 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QScrollArea>
+#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
@@ -33,7 +35,12 @@ public:
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QPlainTextEdit *plainTextEdit;
+    QStackedWidget *stackedWidget;
+    QWidget *page;
     QLabel *label;
+    QWidget *page_2;
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -59,9 +66,26 @@ public:
         plainTextEdit = new QPlainTextEdit(centralWidget);
         plainTextEdit->setObjectName(QStringLiteral("plainTextEdit"));
         plainTextEdit->setGeometry(QRect(380, 40, 351, 381));
-        label = new QLabel(centralWidget);
+        stackedWidget = new QStackedWidget(centralWidget);
+        stackedWidget->setObjectName(QStringLiteral("stackedWidget"));
+        stackedWidget->setGeometry(QRect(60, 30, 291, 391));
+        page = new QWidget();
+        page->setObjectName(QStringLiteral("page"));
+        label = new QLabel(page);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(30, 40, 291, 381));
+        label->setGeometry(QRect(-24, 12, 301, 381));
+        stackedWidget->addWidget(page);
+        page_2 = new QWidget();
+        page_2->setObjectName(QStringLiteral("page_2"));
+        scrollArea = new QScrollArea(page_2);
+        scrollArea->setObjectName(QStringLiteral("scrollArea"));
+        scrollArea->setGeometry(QRect(19, 19, 271, 371));
+        scrollArea->setWidgetResizable(true);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 269, 369));
+        scrollArea->setWidget(scrollAreaWidgetContents);
+        stackedWidget->addWidget(page_2);
         MainWindow->setCentralWidget(centralWidget);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -71,6 +95,9 @@ public:
         MainWindow->setStatusBar(statusBar);
 
         retranslateUi(MainWindow);
+
+        stackedWidget->setCurrentIndex(0);
+
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi

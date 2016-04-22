@@ -7,6 +7,7 @@
 #include <QCameraImageCapture>
 #include <QMediaRecorder>
 #include <QMainWindow>
+#include <QCameraViewfinder>
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +18,9 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    QCamera *camera=new QCamera(this);
+    QCameraViewfinder *viewfinder = new QCameraViewfinder(this);
+
     explicit MainWindow(QWidget *parent = 0);
     QString getText();
     QPixmap getImage();
@@ -37,6 +41,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
 };
 
 #endif // MAINWINDOW_H
