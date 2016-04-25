@@ -1,11 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <iostream>
 #include <QApplication>
 #include <QCamera>
 #include <QCameraImageCapture>
 #include <QMainWindow>
-#include <QCameraViewfinder>
 #include <QMediaService>
 #include <QMediaRecorder>
 #include <QCameraViewfinder>
@@ -14,8 +13,9 @@
 #include <QMediaMetaData>
 #include <QtWidgets>
 #include <QWidget>
-
-namespace Ui {
+using namespace std;
+namespace Ui
+{
 class MainWindow;
 }
 
@@ -26,7 +26,7 @@ class MainWindow : public QMainWindow
 public:
     QCamera *camera=new QCamera(this);
     QCameraViewfinder *viewfinder = new QCameraViewfinder(this);
-    //test *qtest = new test();
+    //create objects here
 
     explicit MainWindow(QWidget *parent = 0);
     QString getText();
@@ -34,18 +34,8 @@ public:
     ~MainWindow();
 
 private slots:
-
-
     void on_pushButton_3_clicked();
-
     void on_pushButton_clicked();
-
-
-
-
-
-
-
 
 private:
     Ui::MainWindow *ui;

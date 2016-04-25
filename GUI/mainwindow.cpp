@@ -1,22 +1,13 @@
-#include <iostream>
-
-using namespace std;
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
-
-
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
-
 {
 
     ui->setupUi(this);
     //------------------ START CAMERA -----------------
     ui->stackedWidget->setCurrentIndex(1);
-    cout << ui->stackedWidget->currentWidget() << endl;
-    cout << ui->stackedWidget->widget(1) << endl;
     ui->plainTextEdit->clear();
     ui->scrollArea->setWidget(viewfinder);
     camera->setViewfinder(viewfinder);
@@ -26,7 +17,6 @@ MainWindow::MainWindow(QWidget *parent) :
 //Retrives text from another file
 QString MainWindow::getText()
 {
-str = "eee ";
 //string test = qtest->setText();
 //str = QString::fromStdString(test);
  return str;
