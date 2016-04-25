@@ -26,7 +26,6 @@ MainWindow::MainWindow(QWidget *parent) :
 //Retrives text from another file
 QString MainWindow::getText()
 {
-str = "eee ";
 //string test = qtest->setText();
 //str = QString::fromStdString(test);
  return str;
