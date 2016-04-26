@@ -42,7 +42,6 @@ public:
     QLabel *label_3;
     QLabel *label_2;
     QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -50,7 +49,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(1055, 545);
+        MainWindow->resize(1049, 568);
         MainWindow->setStyleSheet(QLatin1String("plainTextEdit{background-color : white}\n"
 "QWidget{background-color: black}\n"
 "QPushButton { color: black; background-color: linen }\n"
@@ -105,10 +104,8 @@ public:
         stackedWidget->addWidget(page_2);
         pushButton_2 = new QPushButton(centralWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(880, 470, 75, 23));
-        pushButton_3 = new QPushButton(centralWidget);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(880, 440, 75, 23));
+        pushButton_2->setGeometry(QRect(880, 450, 75, 23));
+        pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
         MainWindow->setCentralWidget(centralWidget);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -138,7 +135,6 @@ public:
         label_3->setText(QApplication::translate("MainWindow", "If you can read this, your camera is not enabled", 0));
         label_2->setText(QApplication::translate("MainWindow", "Camera:", 0));
         pushButton_2->setText(QApplication::translate("MainWindow", "Clear", 0));
-        pushButton_3->setText(QApplication::translate("MainWindow", "Reset", 0));
     } // retranslateUi
 
 };

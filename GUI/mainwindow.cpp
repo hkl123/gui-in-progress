@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
  //------------------ START CAMERA -----------------
     ui->stackedWidget->setCurrentIndex(1);
-    ui->plainTextEdit->setStyleSheet("background-color: white");
+    ui->plainTextEdit->setStyleSheet("background: url(snap2txtscaled2.jpg)");
     ui->scrollArea->setWidget(viewfinder);
     camera->setViewfinder(viewfinder);
     camera->start();
@@ -63,6 +63,7 @@ void MainWindow::on_pushButton_3_clicked()
  * ~ Take Picture
  * ~ Save Picture
  * ~ Stop Camera [DONE]
+ * ~ Turn off camera
  * ~ make text pop up
  * ~ Show the picture just taken (Stops the camera which basically shows what
  *                                you just took a picture of, so loading pics is
@@ -96,3 +97,7 @@ void MainWindow::on_pushButton_4_clicked()
        }
 }
 
+void MainWindow::on_pushButton_2_clicked()
+{
+    ui->plainTextEdit->clear();
+}
