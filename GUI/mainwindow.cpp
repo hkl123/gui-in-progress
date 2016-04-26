@@ -7,9 +7,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->plainTextEdit->setStyleSheet("background: url(snap2txtscaled2.jpg)");
  //------------------ START CAMERA -----------------
     ui->stackedWidget->setCurrentIndex(1);
-    ui->plainTextEdit->setStyleSheet("background: url(snap2txtscaled2.jpg)");
     ui->scrollArea->setWidget(viewfinder);
     camera->setViewfinder(viewfinder);
     camera->start();
