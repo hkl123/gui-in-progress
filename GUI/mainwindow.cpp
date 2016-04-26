@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
  //------------------ START CAMERA -----------------
     ui->stackedWidget->setCurrentIndex(1);
-    ui->plainTextEdit->clear();
+    ui->plainTextEdit->setStyleSheet("background-color: white");
     ui->scrollArea->setWidget(viewfinder);
     camera->setViewfinder(viewfinder);
     camera->start();
@@ -26,11 +26,8 @@ QString MainWindow::getText()
 
 }
 
-//loads image
-/* Will need to be used
- * for displaying the image
- * just saved
- */
+/*loads image
+(Will not be needed unless we give option to load image to be read)
 QPixmap MainWindow::getImage()
 {
   ui->scrollArea->close();
@@ -40,6 +37,7 @@ QPixmap MainWindow::getImage()
   QPixmap image(fileName);
   return image;
 }
+*/
 
 MainWindow::~MainWindow()
 {
@@ -47,14 +45,15 @@ MainWindow::~MainWindow()
 }
 
 /*
-//Load Images ~ added feature later...
+Load Images ~ FUTURE? (BUTTON REMOVED)
+(Will not be needed unless we give option to load image to be read)
 void MainWindow::on_pushButton_3_clicked()
 {
     camera->stop();
-//  ui->stackedWidget->setCurrentIndex(0);
-//  ui->label->setScaledContents(true);
+    ui->stackedWidget->setCurrentIndex(0);
+    ui->label->setScaledContents(true);
     ui->label->setPixmap(getImage());
-//  cout << ui->stackedWidget->currentIndex() << endl;
+    cout << ui->stackedWidget->currentIndex() << endl;
 }
 */
 
@@ -63,23 +62,26 @@ void MainWindow::on_pushButton_3_clicked()
 /*This button will need to:
  * ~ Take Picture
  * ~ Save Picture
- * ~ Stop Camera
+ * ~ Stop Camera [DONE]
  * ~ make text pop up
- * ~ Show the picture just taken
+ * ~ Show the picture just taken (Stops the camera which basically shows what
+ *                                you just took a picture of, so loading pics is
+ *                                now uneccessary)
  */
 void MainWindow::on_pushButton_clicked()
 {
     camera->stop(); //stop camera
     ui->plainTextEdit->insertPlainText(MainWindow::getText());
-    QString textInBox = ui->plainTextEdit->toPlainText();
 
 }
+
+
 
 //save .txt button
 void MainWindow::on_pushButton_4_clicked()
 {
     QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"), QString(),
-               tr("Text Files (*.txt);;C++ Files (*.cpp *.h)"));
+               tr("Text Files (*.txt)"));
 
        if (!fileName.isEmpty()) {
            QFile file(fileName);
@@ -93,3 +95,4 @@ void MainWindow::on_pushButton_4_clicked()
            }
        }
 }
+
