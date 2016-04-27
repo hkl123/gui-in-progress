@@ -39,12 +39,11 @@ public:
     QWidget *page_2;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
+    QLabel *label_3;
+    QLabel *label_2;
     QPushButton *pushButton_2;
     QLabel *label_4;
-    QLabel *label_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_5;
-    QPushButton *pushButton_6;
+    QLabel *label_5;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -52,7 +51,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(1049, 666);
+        MainWindow->resize(1049, 680);
         QFont font;
         font.setPointSize(24);
         MainWindow->setFont(font);
@@ -65,7 +64,7 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(170, 520, 121, 41));
+        pushButton->setGeometry(QRect(160, 520, 121, 41));
         QFont font1;
         font1.setFamily(QStringLiteral("Consolas"));
         font1.setPointSize(12);
@@ -94,14 +93,13 @@ public:
         page->setObjectName(QStringLiteral("page"));
         label = new QLabel(page);
         label->setObjectName(QStringLiteral("label"));
-        label->setEnabled(true);
-        label->setGeometry(QRect(-24, 20, 301, 381));
+        label->setGeometry(QRect(-24, 12, 301, 381));
         stackedWidget->addWidget(page);
         page_2 = new QWidget();
         page_2->setObjectName(QStringLiteral("page_2"));
         scrollArea = new QScrollArea(page_2);
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
-        scrollArea->setGeometry(QRect(10, 20, 271, 371));
+        scrollArea->setGeometry(QRect(20, 20, 271, 371));
         scrollArea->setMaximumSize(QSize(271, 16777215));
         scrollArea->viewport()->setProperty("cursor", QVariant(QCursor(Qt::CrossCursor)));
         scrollArea->setWidgetResizable(true);
@@ -109,7 +107,16 @@ public:
         scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 269, 369));
         scrollAreaWidgetContents->setMinimumSize(QSize(0, 369));
+        label_3 = new QLabel(scrollAreaWidgetContents);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(10, 130, 241, 31));
+        label_3->setLayoutDirection(Qt::LeftToRight);
+        label_3->setStyleSheet(QStringLiteral("QLabel{color:white}"));
         scrollArea->setWidget(scrollAreaWidgetContents);
+        label_2 = new QLabel(page_2);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(20, 0, 47, 13));
+        label_2->setStyleSheet(QStringLiteral("QLabel{color : white}"));
         stackedWidget->addWidget(page_2);
         pushButton_2 = new QPushButton(centralWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
@@ -118,50 +125,20 @@ public:
         font2.setFamily(QStringLiteral("Consolas"));
         pushButton_2->setFont(font2);
         pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_2->setToolTipDuration(-1);
         label_4 = new QLabel(centralWidget);
         label_4->setObjectName(QStringLiteral("label_4"));
         label_4->setGeometry(QRect(420, 110, 47, 13));
         label_4->setFont(font2);
         label_4->setStyleSheet(QStringLiteral("QLabel{color : white}"));
-        label_2 = new QLabel(centralWidget);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(90, 110, 47, 13));
-        label_2->setStyleSheet(QStringLiteral("QLabel{color : white}"));
-        pushButton_3 = new QPushButton(centralWidget);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(830, 510, 41, 21));
-        pushButton_3->setFont(font2);
-        pushButton_3->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_3->setToolTipDuration(-1);
-        pushButton_5 = new QPushButton(centralWidget);
-        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
-        pushButton_5->setGeometry(QRect(880, 510, 41, 21));
-        pushButton_5->setFont(font2);
-        pushButton_5->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_5->setToolTipDuration(-1);
-        pushButton_6 = new QPushButton(centralWidget);
-        pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
-        pushButton_6->setGeometry(QRect(10, 0, 171, 51));
+        label_5 = new QLabel(centralWidget);
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setGeometry(QRect(20, 10, 201, 41));
         QFont font3;
         font3.setFamily(QStringLiteral("Consolas"));
         font3.setPointSize(26);
-        font3.setBold(true);
-        font3.setWeight(75);
-        pushButton_6->setFont(font3);
-        pushButton_6->setStyleSheet(QStringLiteral("QPushButton{background-color: black; color:white}"));
+        label_5->setFont(font3);
+        label_5->setStyleSheet(QStringLiteral("QLabel{color : white}"));
         MainWindow->setCentralWidget(centralWidget);
-        pushButton->raise();
-        pushButton_4->raise();
-        plainTextEdit->raise();
-        stackedWidget->raise();
-        pushButton_2->raise();
-        label_4->raise();
-        label_2->raise();
-        label_2->raise();
-        pushButton_3->raise();
-        pushButton_5->raise();
-        pushButton_6->raise();
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
         mainToolBar->setMovable(false);
@@ -174,7 +151,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -183,37 +160,18 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
-#ifndef QT_NO_TOOLTIP
-        pushButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Take Picture and Make it Text :)</p></body></html>", 0));
-#endif // QT_NO_TOOLTIP
         pushButton->setText(QApplication::translate("MainWindow", "Snap2Txt", 0));
-#ifndef QT_NO_TOOLTIP
-        pushButton_4->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>saves text as .txt file</p></body></html>", 0));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_WHATSTHIS
-        pushButton_4->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
         pushButton_4->setText(QApplication::translate("MainWindow", "Save .txt", 0));
         plainTextEdit->setPlainText(QApplication::translate("MainWindow", "Welcome to Snap2Txt!\n"
 "Your Text Will Appear Here:\n"
 "\n"
 "", 0));
         label->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        pushButton_2->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Clear Text Box</p></body></html>", 0));
-#endif // QT_NO_TOOLTIP
+        label_3->setText(QApplication::translate("MainWindow", "If you can read this, your camera is not enabled", 0));
+        label_2->setText(QApplication::translate("MainWindow", "Camera:", 0));
         pushButton_2->setText(QApplication::translate("MainWindow", "Clear", 0));
         label_4->setText(QApplication::translate("MainWindow", "Text:", 0));
-        label_2->setText(QApplication::translate("MainWindow", "Camera:", 0));
-#ifndef QT_NO_TOOLTIP
-        pushButton_3->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Undo ~ Clear Cannot Be Undone</p></body></html>", 0));
-#endif // QT_NO_TOOLTIP
-        pushButton_3->setText(QApplication::translate("MainWindow", "Undo", 0));
-#ifndef QT_NO_TOOLTIP
-        pushButton_5->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Redo</p></body></html>", 0));
-#endif // QT_NO_TOOLTIP
-        pushButton_5->setText(QApplication::translate("MainWindow", "Redo", 0));
-        pushButton_6->setText(QApplication::translate("MainWindow", "Snap2Txt", 0));
+        label_5->setText(QApplication::translate("MainWindow", "Snap2Txt", 0));
     } // retranslateUi
 
 };
