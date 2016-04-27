@@ -71,8 +71,8 @@ void MainWindow::on_pushButton_3_clicked()
  */
 void MainWindow::on_pushButton_clicked()
 {
-    camera->stop(); //stop camera
-    ui->plainTextEdit->setStyleSheet("background-color: white");
+    camera->stop(); //stop camera [can be removed for multiple pictures, but showing image will be necessary
+    ui->plainTextEdit->setStyleSheet("background-color: white"); //removes image from background
     ui->plainTextEdit->insertPlainText(MainWindow::getText());
 
 }
@@ -101,5 +101,25 @@ void MainWindow::on_pushButton_4_clicked()
 void MainWindow::on_pushButton_2_clicked()
 {
     ui->plainTextEdit->clear();
-    ui->plainTextEdit->setStyleSheet("background: url(snap2txtscaled2.jpg)");
+    //ui->plainTextEdit->setStyleSheet("background: url(snap2txtscaled2.jpg)");
+    ui->plainTextEdit->setStyleSheet("background-color : white");
+}
+
+//undo button
+void MainWindow::on_pushButton_3_clicked()
+{
+    ui->plainTextEdit->undo();
+}
+
+
+//redo button
+void MainWindow::on_pushButton_5_clicked()
+{
+    ui->plainTextEdit->redo();
+}
+
+//hidden button
+void MainWindow::on_pushButton_6_clicked()
+{
+        ui->plainTextEdit->setStyleSheet("background: url(snap2txtscaled2.jpg)");
 }
